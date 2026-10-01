@@ -5,7 +5,7 @@
 class Frags < Formula
   desc "FRAGS CLI"
   homepage "https://github.com/fragshq/frags"
-  version "cli/v1.0.0-rc9"
+  version "v1.0.0-rc9"
   license "AGPL"
 
   on_macos do
