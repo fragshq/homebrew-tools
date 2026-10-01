@@ -5,21 +5,21 @@
 class Frags < Formula
   desc "FRAGS CLI"
   homepage "https://github.com/fragshq/frags"
-  version "v1.0.0-rc8"
+  version "cli/v1.0.0-rc9"
   license "AGPL"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc8/frags_cli.v1.0.0-rc8_darwin_amd64.tar.gz"
-      sha256 "e3896c9493118630b6c2cbc63a7bc6fbfcbbb81408a7443e7e0d98cf1c9b0f84"
+      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_darwin_amd64.tar.gz"
+      sha256 "59cdbe9d34dd3f647bda83ba32dc9c7e815b34a0308a9f27b7bf339814f2d4a5"
 
       define_method(:install) do
         bin.install "frags"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc8/frags_cli.v1.0.0-rc8_darwin_arm64.tar.gz"
-      sha256 "d7d8bc38cfc196006f333c8f248346b7e72d14c05337ecd913a1f6f88fbfb4d2"
+      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_darwin_arm64.tar.gz"
+      sha256 "feaae9328552dec206da865ab09f6cdcdf9a01e083e6ea6aaf85f39444c76201"
 
       define_method(:install) do
         bin.install "frags"
@@ -29,15 +29,15 @@ class Frags < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc8/frags_cli.v1.0.0-rc8_linux_amd64.tar.gz"
-      sha256 "0d81d11c89c176c9bcd0ebf26c34d3732c2a18e450c738b71b5371349b49c195"
+      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_linux_amd64.tar.gz"
+      sha256 "81bbdbe1bfe0c4dffa8cb996059d40dd8db27b8efb40be1bc36420e96ea160d0"
       define_method(:install) do
         bin.install "frags"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc8/frags_cli.v1.0.0-rc8_linux_arm64.tar.gz"
-      sha256 "162f4ece83eb1b603a705c51d0a05914b3eb9cbc7d14602819cd9f2ae0e34aaa"
+      url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_linux_arm64.tar.gz"
+      sha256 "8384e774bbf45b7a1d6d729737a06aa6bbb63a3db5b66cd4f1f14a7442173cef"
       define_method(:install) do
         bin.install "frags"
       end
