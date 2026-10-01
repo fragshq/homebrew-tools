@@ -11,7 +11,7 @@ class Frags < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_darwin_amd64.tar.gz"
-      sha256 "59cdbe9d34dd3f647bda83ba32dc9c7e815b34a0308a9f27b7bf339814f2d4a5"
+      sha256 "8d2e1e973f4dd70181267adf85ef3073c4a3930d2df4169a1297882bf81543de"
 
       define_method(:install) do
         bin.install "frags"
@@ -19,7 +19,7 @@ class Frags < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_darwin_arm64.tar.gz"
-      sha256 "feaae9328552dec206da865ab09f6cdcdf9a01e083e6ea6aaf85f39444c76201"
+      sha256 "705cc0d23c3ff05689d2c78457b73125858045552632a0a9483936d225b0a7ee"
 
       define_method(:install) do
         bin.install "frags"
@@ -30,14 +30,14 @@ class Frags < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_linux_amd64.tar.gz"
-      sha256 "81bbdbe1bfe0c4dffa8cb996059d40dd8db27b8efb40be1bc36420e96ea160d0"
+      sha256 "24f01e6b22dc9ac9a855e6a805e9e0a359f79adbea1a32b65d9e86814675aa31"
       define_method(:install) do
         bin.install "frags"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/fragshq/frags/releases/download/cli%2Fv1.0.0-rc9/frags_cli/v1.0.0-rc9ccli/v1.0.0-rc9lcli/v1.0.0-rc9icli/v1.0.0-rc9/cli/v1.0.0-rc9_linux_arm64.tar.gz"
-      sha256 "8384e774bbf45b7a1d6d729737a06aa6bbb63a3db5b66cd4f1f14a7442173cef"
+      sha256 "5f615ec020cefd25b19f27f5bc3a863ede85107c6a89c3c18779209a837f68ad"
       define_method(:install) do
         bin.install "frags"
       end
